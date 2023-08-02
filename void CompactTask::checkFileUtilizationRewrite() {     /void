@@ -1,0 +1,9 @@
+void CompactTask::checkFileUtilizationRewrite()
+{
+
+    std::sort(sealedFilesUsage.begin(), sealedFilesUsage.end(), GarbageCollectionCompare);
+    
+    int64_t sealedFileMaxSize = INT64_FLAG(lsm_CompactionSealedMaxSize);
+    int32_t sealedFileMaxNum = INT32_FLAG(lsm_CompactionSealedMaxFileNum);
+    int64_t targetFileSize = 0;
+    int32_t sourceFileCnt = 0;   
