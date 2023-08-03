@@ -1,0 +1,19 @@
+}
+	d=Math.sqrt((x-playerX)*(x-playerX)+(y-playerY)*(y-playerY)+(z-playerZ)*(z-playerZ));
+	pow.volume=1.5/(1+d/10);
+	pow.play();
+}
+ 
+function doLogic(){
+	
+	if(seedTimer<frames){
+		seedTimer=frames+seedInterval*Math.random()*10;
+		spawnSeed();
+	}
+	for(i=0;i<seeds.length;++i){
+		seeds[i].vy+=gravity;
+		seeds[i].x+=seeds[i].vx;
+		seeds[i].y+=seeds[i].vy;
+		seeds[i].z+=seeds[i].vz;
+		if(frames-seeds[i].born>seed
+————————————————
