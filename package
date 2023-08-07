@@ -1,0 +1,15 @@
+package com.sun.content.server.billing.external; 
+ 
+import com.sun.content.server.billing.BillingException; 
+import com.sun.content.server.billing.BillingInfo; 
+import com.sun.content.server.billing.BillingManager; 
+import com.sun.content.server.log.BillingManagerKeys; 
+import com.sun.content.server.log.LogCategory; 
+ 
+/** 
+ * This is a sample implementation of the Billing API. 
+ */ 
+public class CDSBillingManager implements BillingManager 
+{ 
+  // These flags can be used to simulate responses from the billing 
+  //integration. 
