@@ -1,0 +1,9 @@
+enum DIR
+{
+	UP,
+	RIGHT,
+	DOWN,
+	LEFT
+};
+ 
+time_t start = 0, finish = 0;
