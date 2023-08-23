@@ -1,0 +1,6 @@
+// Update content download descriptor 
+    return inContentInfo; 
+  } 
+ 
+  public ContentInfo getContentBinary( 
+    ContentInfo inContentInfo, 
