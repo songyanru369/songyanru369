@@ -1,0 +1,6 @@
+# Java Command Line Option Constants 
+CDS_OPTS="-Dcds.home=${CDS_HOME}" 
+CDS_OPTS="${CDS_OPTS} -Dcds.config.file=CDS.properties" 
+CDS_OPTS="${CDS_OPTS} -Dcds.config.dir=${CONF_DIR}" 
+ 
+# Compile 
